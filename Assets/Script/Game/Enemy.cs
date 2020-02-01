@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     }
     public enemyState enemyStateNow;
     private float damageTime;           //累積正在破壞時間
+    private float coverTime;            //累積正在破壞時間
     public float damageCompleteTime;    //破壞完成時間
     public int damagedLevel;            //破壞程度階級
     private Vector2 originalEnemyPosition;  //開始遊戲時的位置
@@ -111,6 +112,18 @@ public class Enemy : MonoBehaviour
 
     void Enemy_cover()
     {
+        // 假裝挖吸引注意
+        Debug.Log("假裝挖掘");
+        coverTime += Time.deltaTime;
+        switch (coverTime / 5)
+        {
+            case 2:
+                Debug.Log("隔壁出現提示");
+                break;
+            case 3:
+                Debug.Log("全房出現提示");
+                break;
+        }
 
     }
     void Enemy_pretend()
