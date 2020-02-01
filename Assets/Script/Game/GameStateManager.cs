@@ -18,12 +18,31 @@ public class GameStateManager : SingletonMono<GameStateManager>
 
     void Start()
     {
-        
+        SetState(eGameState.Idle);
     }
 
     void Update()
     {
         GameStateContext.StateUpdate();
+    }
+
+    public void SetState(eGameState gameState)
+    {
+        switch (gameState)
+        {
+            case eGameState.Idle:
+                GameStateContext.SetState(new GameStateIdle());
+                break;
+            case eGameState.Punish:
+                GameStateContext.SetState(new GameStatePunish());
+                break;
+            case eGameState.GameWin:
+                GameStateContext.SetState(new GameStateGameWin());
+                break;
+            case eGameState.GameOver:
+                GameStateContext.SetState(new GameStateGameOver());
+                break;
+        }
     }
 }
 
@@ -43,7 +62,10 @@ public class GameStateContext
 
     public void StateUpdate()
     {
-        GameState.StateUpdate();
+        if (GameState != null)
+        {
+            GameState.StateUpdate();
+        }
     }
 }
 
@@ -72,9 +94,15 @@ public class GameStateIdle : IGameState
 
 public class GameStatePunish : IGameState
 {
+    private System.IDisposable PunishTimer = null;
     public override void StateStart()
     {
         GameStateManager.Instance.GameStateNow = eGameState.Punish;
+
+        PunishTimer = Usefull.Timer(10, () =>
+        {
+            GameStateManager.Instance.SetState(eGameState.Idle);
+        });
     }
 
     public override void StateUpdate()
@@ -83,6 +111,10 @@ public class GameStatePunish : IGameState
 
     public override void StateEnd()
     {
+        if (PunishTimer != null)
+        {
+            PunishTimer.Dispose();
+        }
     }
 }
 

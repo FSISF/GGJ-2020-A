@@ -11,9 +11,9 @@ public class Usefull
     /// </summary>
     /// <param name="second"></param>
     /// <param name="complete"></param>
-    public static void Timer(double second, Action complete)
+    public static IDisposable Timer(double second, Action complete)
     {
-        Observable.Timer(TimeSpan.FromSeconds(second)).DoOnCompleted(() =>
+        return Observable.Timer(TimeSpan.FromSeconds(second)).DoOnCompleted(() =>
         {
             if (complete != null)
             {
