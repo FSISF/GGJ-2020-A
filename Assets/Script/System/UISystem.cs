@@ -1,18 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class UISystem : MonoBehaviour
+public class UISystem : SingletonMono<UISystem>
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    private Text TextGameTime = null;
+
+    [SerializeField]
+    private GameObject GameObjectWinGorup = null;
+
+    [SerializeField]
+    private GameObject GameObjectLosGroup = null;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ShowGameTime(int time)
     {
-        
+        TextGameTime.text = time.ToString();
+    }
+
+    public void ShowWin()
+    {
+        GameObjectWinGorup.SetActive(true);
+    }
+
+    public void ShowLose()
+    {
+        GameObjectLosGroup.SetActive(true);
     }
 }
