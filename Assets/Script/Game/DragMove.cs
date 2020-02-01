@@ -4,27 +4,33 @@ using UnityEngine;
 
 public class DragMove : MonoBehaviour
 {
-    public float dragSpeed = 2;
-    private Vector3 dragOrigin;
+    public float DragSpeed = 2;
+    private Vector3 DragOrigin;
+
+    private float LimitX = 19.2f * 2;
 
     void Start()
     {
-        
+        Debug.Log(Screen.width);
     }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            dragOrigin = Input.mousePosition;
+            DragOrigin = Input.mousePosition;
             return;
         }
 
         if (!Input.GetMouseButton(0)) return;
 
-        Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
-        Vector3 move = new Vector3(pos.x * dragSpeed, 0, pos.y * dragSpeed);
+        Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - DragOrigin);
+        Vector3 move = new Vector3(pos.x * DragSpeed, 0, 0);
 
         transform.Translate(move, Space.World);
+        if (Mathf.Abs(transform.position.x) >= LimitX)
+        {
+            transform.position = new Vector3(Mathf.Sign(move.x) * LimitX, 0, -10f);
+        }
     }
 }
