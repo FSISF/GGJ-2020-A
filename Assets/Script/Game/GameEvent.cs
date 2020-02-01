@@ -10,6 +10,10 @@ public class GameEvent
     public static event CheckOjectLevel CheckObjectLevel;
     public static void DoCheckObjectLevel()
     {
+        if (CheckObjectLevel == null)
+        {
+            return;
+        }
         CheckObjectLevel();
     }
 }

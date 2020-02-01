@@ -110,6 +110,7 @@ public class GameStateIdle : IGameState
 
     public override void StateUpdate()
     {
+        GameEvent.DoCheckObjectLevel();
     }
 
     public override void StateEnd()
@@ -221,7 +222,7 @@ public class TimeStateTiming : ITimeState
         set
         {
             timer = value;
-            UISystem.Instance.ShowGameTime(Mathf.FloorToInt(timer));
+            UISystem.Instance.ShowGameTime(Mathf.CeilToInt(timer));
         }
     }
 
