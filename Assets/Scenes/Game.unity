@@ -347,6 +347,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -488,6 +489,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -629,6 +631,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -855,6 +858,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -996,6 +1000,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -1137,6 +1142,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -1278,6 +1284,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -1419,6 +1426,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -1498,6 +1506,7 @@ GameObject:
   - component: {fileID: 1023974264}
   - component: {fileID: 1023974267}
   - component: {fileID: 1023974268}
+  - component: {fileID: 1023974269}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1582,7 +1591,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d29332d2b573ce49870a4255b7918ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DragSpeed: 5
+  DragStateNow: 0
+  NowIndex: 2
+  MoveXArray:
+  - -38.4
+  - -19.2
+  - 0
+  - 19.2
+  - 38.4
+  MouseDownPosX: 0
+  MouseUpPosX: 0
 --- !u!114 &1023974268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1599,6 +1617,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
+--- !u!114 &1023974269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023974263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2589dde868b854e35aba10f6c8c4770e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1035813149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1704,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -1815,6 +1846,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2041,6 +2073,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2267,6 +2300,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2408,6 +2442,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2549,6 +2584,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2690,6 +2726,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2831,6 +2868,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -3017,6 +3055,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -3243,6 +3282,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -3384,6 +3424,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -3525,6 +3566,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  level: 3
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
