@@ -148,6 +148,7 @@ public class GameStateGameWin : IGameState
     public override void StateStart()
     {
         GameStateManager.Instance.GameStateNow = eGameState.GameWin;
+        UISystem.Instance.ShowWin();
     }
 
     public override void StateUpdate()
@@ -164,6 +165,7 @@ public class GameStateGameOver : IGameState
     public override void StateStart()
     {
         GameStateManager.Instance.GameStateNow = eGameState.GameOver;
+        UISystem.Instance.ShowLose();
     }
 
     public override void StateUpdate()
