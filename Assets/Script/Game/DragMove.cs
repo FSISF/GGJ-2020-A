@@ -11,7 +11,6 @@ public class DragMove : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(Screen.width);
     }
 
     void Update()
