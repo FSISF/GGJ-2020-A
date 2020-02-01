@@ -16,6 +16,11 @@ public class DragMove : MonoBehaviour
 
     void Update()
     {
+        if (GameStateManager.Instance.GameStateNow != eGameState.Idle)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             DragOrigin = Input.mousePosition;
@@ -30,7 +35,7 @@ public class DragMove : MonoBehaviour
         transform.Translate(move, Space.World);
         if (Mathf.Abs(transform.position.x) >= LimitX)
         {
-            transform.position = new Vector3(Mathf.Sign(move.x) * LimitX, 0, -10f);
+            transform.position = new Vector3(Mathf.Sign(transform.position.x) * LimitX, 0, -10f);
         }
     }
 }
