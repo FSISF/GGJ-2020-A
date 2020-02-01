@@ -29,7 +29,7 @@ public class DragMove : MonoBehaviour
         if (!Input.GetMouseButton(0)) return;
 
         Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - DragOrigin);
-        Vector3 move = new Vector3(pos.x * DragSpeed, 0, 0);
+        Vector3 move = new Vector3(pos.x * -DragSpeed, 0, 0);
 
         transform.Translate(move, Space.World);
         if (Mathf.Abs(transform.position.x) >= LimitX)
