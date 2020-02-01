@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -21,18 +22,26 @@ public class Enemy : MonoBehaviour
     private int idleMaxTime;            //最大閒置時間   
     public int speed;                   //移動速度
     private float lastTime = 0;
+    public int cam;
     private int derect = 1;
-    public Camera cam;
+    public int number;
+    public Image rightNotice;
+    public Image leftNotice;
+    public GameObject abclevel;
 
     void Start()
     {
         enemyStateNow = enemyState.idle;
         originalEnemyPosition = transform.position;
+        rightNotice = GameObject.Find("right_notice").GetComponent<Image>();
+        leftNotice = GameObject.Find("left_notice").GetComponent<Image>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        cam = GameObject.Find("Main Camera").GetComponent<DragMove>().NowIndex;
         switch (enemyStateNow)
         {
             case enemyState.idle:
@@ -52,21 +61,16 @@ public class Enemy : MonoBehaviour
 
     void Enemy_idle()
     {
-        if (idleTime - lastTime >= 3 || idleTime == 0)
-        {
-            lastTime = idleTime;
-            int p = Random.Range(0, 99);
-            if (p <= 40)
-                transform.Translate(Vector2.right * Time.deltaTime * speed);
-            else if (40 < p && p <= 80)
-                transform.Translate(Vector2.right * Time.deltaTime * speed);
-        }
+        if (transform.position.x >= originalEnemyPosition.x + 4)
+            derect = -1;
+        else if (transform.position.x <= originalEnemyPosition.x - 4)
+            derect = 1;
+        transform.Translate(Vector2.right * Time.deltaTime * speed*derect);
         if (idleTime == 0)
         {
             idleMaxTime = Random.Range(5, 10);
         } 
         idleTime += Time.deltaTime;
-        Debug.Log(idleTime);
         if (idleTime >= idleMaxTime)
         {
             idleTime = 0;
@@ -88,25 +92,32 @@ public class Enemy : MonoBehaviour
         transform.position = new Vector2(2.0f, -1.5f);
         damageTime += Time.deltaTime;
         Debug.Log("挖掘動畫");
-        switch (damageTime / 5)
+        switch (Mathf.Ceil(damageTime / 5))
         {
             case 2:
+                Notcie();
                 Debug.Log("隔壁出現提示");
                 break;
             case 3:
+                Notcie();
                 Debug.Log("全房出現提示");
                 break;
         }
         Debug.Log(damageTime);
-        if (Vector2.Distance(transform.position, cam.transform.position) <= Screen.width / 2)
+        if (cam - number == 0)
         {
             enemyStateNow = enemyState.pretend;
         }
         if (damageTime >= damageCompleteTime)
         {
-            damagedLevel += 1;
+            Debug.Log("全房出現提示");
+
+
+            GameObject.Find("wall2").GetComponent<LongPressEffect>().level += 1;
             damageTime = 0;
             enemyStateNow = enemyState.idle;
+            leftNotice.enabled = false;
+            rightNotice.enabled = false;
         }
     }
 
@@ -116,17 +127,37 @@ public class Enemy : MonoBehaviour
         Debug.Log("假裝挖掘");
         coverTime += Time.deltaTime;
         if (coverTime >= 30) {
-            Debug.Log("全房出現提示");
+            if (Mathf.Abs(cam - number) >= 1)
+                Debug.Log("全房出現提示");
         }
 
     }
     void Enemy_pretend()
     {
-        if (Vector2.Distance(transform.position, cam.transform.position) > Screen.width / 2)
+        Debug.Log(cam);
+        if (Mathf.Abs( cam- number) >=1)
         {
             enemyStateNow = enemyState.damage;
         }
         transform.position = originalEnemyPosition;
-        Debug.Log("吹口哨動畫");
+    }
+
+    void Notcie() {
+        int i = cam - number;
+        if (i > 0)
+        {
+            leftNotice.enabled = true;
+            rightNotice.enabled = false;
+        }
+        else if (i < 0)
+        {
+            leftNotice.enabled = false;
+            rightNotice.enabled = true;
+        }
+        else
+        {
+            leftNotice.enabled = false;
+            rightNotice.enabled = false;
+        }
     }
 }
