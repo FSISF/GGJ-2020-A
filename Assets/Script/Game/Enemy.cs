@@ -115,14 +115,8 @@ public class Enemy : MonoBehaviour
         // 假裝挖吸引注意
         Debug.Log("假裝挖掘");
         coverTime += Time.deltaTime;
-        switch (coverTime / 5)
-        {
-            case 2:
-                Debug.Log("隔壁出現提示");
-                break;
-            case 3:
-                Debug.Log("全房出現提示");
-                break;
+        if (coverTime >= 30) {
+            Debug.Log("全房出現提示");
         }
 
     }
