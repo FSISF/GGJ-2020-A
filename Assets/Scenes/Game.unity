@@ -801,7 +801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &602852530
 Transform:
   m_ObjectHideFlags: 0
@@ -858,7 +858,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
-  level: 3
+  level: 0
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -1369,7 +1369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1018531972
 Transform:
   m_ObjectHideFlags: 0
@@ -1426,7 +1426,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
-  level: 3
+  level: 0
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2385,7 +2385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1471775617
 Transform:
   m_ObjectHideFlags: 0
@@ -2442,7 +2442,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
-  level: 3
+  level: 0
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -2817,7 +2817,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612521242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8430834985272970675}
@@ -3033,7 +3033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1664364862
 Transform:
   m_ObjectHideFlags: 0
@@ -3090,7 +3090,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
-  level: 3
+  level: 0
   PressDownTimer: 0
   onLongClick:
     m_PersistentCalls:
@@ -3678,13 +3678,18 @@ PrefabInstance:
     - target: {fileID: 1796428482946622549, guid: a5e83bf7b8637d649ab3fe6810bf00e6,
         type: 3}
       propertyPath: m_Name
-      value: prisoner_03
+      value: prisoner_2
       objectReference: {fileID: 0}
     - target: {fileID: 2353447510887146830, guid: a5e83bf7b8637d649ab3fe6810bf00e6,
         type: 3}
       propertyPath: wall
       value: 
       objectReference: {fileID: 1323193716}
+    - target: {fileID: 2353447510887146830, guid: a5e83bf7b8637d649ab3fe6810bf00e6,
+        type: 3}
+      propertyPath: longPressEffect_wall
+      value: 
+      objectReference: {fileID: 1323193719}
     - target: {fileID: 2992226872953491310, guid: a5e83bf7b8637d649ab3fe6810bf00e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3884,10 +3889,15 @@ PrefabInstance:
       propertyPath: wall
       value: 
       objectReference: {fileID: 1664364861}
+    - target: {fileID: 240049483719074674, guid: de64981d5af8a8a4faa822889756024d,
+        type: 3}
+      propertyPath: longPressEffect_wall
+      value: 
+      objectReference: {fileID: 1664364864}
     - target: {fileID: 379442334738323565, guid: de64981d5af8a8a4faa822889756024d,
         type: 3}
       propertyPath: m_Name
-      value: prisoner_05
+      value: prisoner_4
       objectReference: {fileID: 0}
     - target: {fileID: 8399365214891498894, guid: de64981d5af8a8a4faa822889756024d,
         type: 3}
@@ -4019,10 +4029,15 @@ PrefabInstance:
       propertyPath: wall
       value: 
       objectReference: {fileID: 1018531971}
+    - target: {fileID: 6472652914503656848, guid: b5aff63692760e146ac5a33a5d885544,
+        type: 3}
+      propertyPath: longPressEffect_wall
+      value: 
+      objectReference: {fileID: 1018531974}
     - target: {fileID: 7055646716465945652, guid: b5aff63692760e146ac5a33a5d885544,
         type: 3}
       propertyPath: m_Name
-      value: prisoner_04
+      value: prisoner_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5aff63692760e146ac5a33a5d885544, type: 3}
@@ -4042,13 +4057,18 @@ PrefabInstance:
     - target: {fileID: 2307380118584435548, guid: 655aff55609de6c498f8961dae3e606e,
         type: 3}
       propertyPath: m_Name
-      value: prisoner_02
+      value: prisoner_1
       objectReference: {fileID: 0}
     - target: {fileID: 8047115576821708568, guid: 655aff55609de6c498f8961dae3e606e,
         type: 3}
       propertyPath: wall
       value: 
       objectReference: {fileID: 1471775616}
+    - target: {fileID: 8047115576821708568, guid: 655aff55609de6c498f8961dae3e606e,
+        type: 3}
+      propertyPath: longPressEffect_wall
+      value: 
+      objectReference: {fileID: 1471775619}
     - target: {fileID: 8507603208586401280, guid: 655aff55609de6c498f8961dae3e606e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4122,13 +4142,18 @@ PrefabInstance:
     - target: {fileID: 1851023858080263548, guid: 252ba68da8ac026479b9bfbfe40c470a,
         type: 3}
       propertyPath: m_Name
-      value: prisoner_01
+      value: prisoner_0
       objectReference: {fileID: 0}
     - target: {fileID: 3534197149307656248, guid: 252ba68da8ac026479b9bfbfe40c470a,
         type: 3}
       propertyPath: wall
       value: 
       objectReference: {fileID: 602852529}
+    - target: {fileID: 3534197149307656248, guid: 252ba68da8ac026479b9bfbfe40c470a,
+        type: 3}
+      propertyPath: longPressEffect_wall
+      value: 
+      objectReference: {fileID: 602852532}
     - target: {fileID: 5533639054671707449, guid: 252ba68da8ac026479b9bfbfe40c470a,
         type: 3}
       propertyPath: m_LocalPosition.x

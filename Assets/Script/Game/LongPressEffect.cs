@@ -22,6 +22,7 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     GetComponent<SpriteRenderer>().sprite = lv3;
 
     GameEvent.CheckObjectLevel += CheckLevel;
+
   }
 
   public float PressDownTimer; //按下幾秒觸發
@@ -80,5 +81,4 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
       level -= 1; //item狀態回復到上一個level
     }
   }
-
 }

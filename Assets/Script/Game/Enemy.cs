@@ -27,7 +27,9 @@ public class Enemy : MonoBehaviour
     private Image rightNotice;
     private Image leftNotice;
     public GameObject wall;
-    private int wallLevel;
+    public GameObject whist;
+
+    public LongPressEffect longPressEffect_wall = null;
 
     void Start()
     {
@@ -35,7 +37,6 @@ public class Enemy : MonoBehaviour
         originalEnemyPosition = transform.position;
         rightNotice = GameObject.Find("right_notice").GetComponent<Image>();
         leftNotice = GameObject.Find("left_notice").GetComponent<Image>();
-        wallLevel = wall.GetComponent<LongPressEffect>().level;
     }
 
     // Update is called once per frame
@@ -68,7 +69,7 @@ public class Enemy : MonoBehaviour
         transform.Translate(Vector2.right * Time.deltaTime * speed*derect);
         if (idleTime == 0)
         {
-            idleMaxTime = Random.Range(5, 10);
+            idleMaxTime = Random.Range(10, 30);
         } 
         idleTime += Time.deltaTime;
         if (idleTime >= idleMaxTime)
@@ -80,10 +81,12 @@ public class Enemy : MonoBehaviour
             else if (i>80)
                 enemyStateNow = EnemyState.cover;
         }
+        Debug.Log("我是" + number + "號，破壞時間" + damageTime);
     }
 
     void Enemy_damage()
     {
+        whist.SetActive(false);
         transform.position = new Vector3(wall.transform.position.x,transform.position.y,-2);
         damageTime += Time.deltaTime;
         switch (Mathf.Ceil(damageTime / 5))
@@ -96,13 +99,13 @@ public class Enemy : MonoBehaviour
                 Notice();
                 break;
         }
-        if (cam - number == 0)
+        if (cam == number)
         {
             enemyStateNow = EnemyState.pretend;
         }
         if (damageTime >= damageCompleteTime)
         {
-            wallLevel += 1;
+            longPressEffect_wall.level++;
             damageTime = 0;
             enemyStateNow = EnemyState.idle;
             leftNotice.enabled = false;
@@ -113,7 +116,6 @@ public class Enemy : MonoBehaviour
     void Enemy_cover()
     {
         // 假裝挖吸引注意
-        Debug.Log("假裝挖掘");
 
         if (cam == number)
             enemyStateNow = EnemyState.idle;
@@ -121,18 +123,17 @@ public class Enemy : MonoBehaviour
         coverTime += Time.deltaTime;
         if (coverTime >= 30) {
             if (Mathf.Abs(cam - number) >= 1)
-                Notice();            
+                Notice();
         }
-
     }
 
     void Enemy_pretend()
     {
-        Debug.Log(cam);
         if (Mathf.Abs( cam- number) >=1)
         {
             enemyStateNow = EnemyState.damage;
         }
+        whist.SetActive(true);
         transform.position = originalEnemyPosition;
     }
 
@@ -141,11 +142,9 @@ public class Enemy : MonoBehaviour
         if (i > 0)
         {
             leftNotice.enabled = true;
-            rightNotice.enabled = false;
         }
         else if (i < 0)
         {
-            leftNotice.enabled = false;
             rightNotice.enabled = true;
         }
         else
