@@ -24,6 +24,7 @@ public class MusicSystem : SingletonMono<MusicSystem>
         if (BGM == null)
         {
             BGM = this.gameObject.AddComponent<AudioSource>();
+            BGM.volume = 0.7f;
         }
         if (Sound == null)
         {
