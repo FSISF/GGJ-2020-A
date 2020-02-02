@@ -5,37 +5,34 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public enum enemyState
+    public enum EnemyState
     {
         idle,
         damage,
         cover,
         pretend,
     }
-    public enemyState enemyStateNow;
-    private float damageTime;           //累積正在破壞時間
-    private float coverTime;            //累積正在破壞時間
+    public EnemyState enemyStateNow;
+    public int number;                  //犯人編號
+    public int speed;                   //移動速度
+    public float damageTime;            //累積正在破壞時間
     public float damageCompleteTime;    //破壞完成時間
-    public int damagedLevel;            //破壞程度階級
+    private float coverTime;            //累積正在掩護時間
     private Vector2 originalEnemyPosition;  //開始遊戲時的位置
     private float idleTime;             //閒置時間累計
-    private int idleMaxTime;            //最大閒置時間   
-    public int speed;                   //移動速度
+    private int idleMaxTime;            //最大閒置時間
     private float lastTime = 0;
     public int cam;
     private int derect = 1;
-    public int number;
     public Image rightNotice;
     public Image leftNotice;
-    public GameObject abclevel;
 
     void Start()
     {
-        enemyStateNow = enemyState.idle;
+        enemyStateNow = EnemyState.idle;
         originalEnemyPosition = transform.position;
         rightNotice = GameObject.Find("right_notice").GetComponent<Image>();
         leftNotice = GameObject.Find("left_notice").GetComponent<Image>();
-
     }
 
     // Update is called once per frame
@@ -44,16 +41,16 @@ public class Enemy : MonoBehaviour
         cam = GameObject.Find("Main Camera").GetComponent<DragMove>().NowIndex;
         switch (enemyStateNow)
         {
-            case enemyState.idle:
+            case EnemyState.idle:
                 Enemy_idle();
                 break;
-            case enemyState.damage:
+            case EnemyState.damage:
                 Enemy_damage();
                 break;
-            case enemyState.cover:
+            case EnemyState.cover:
                 Enemy_cover();
                 break;
-            case enemyState.pretend:
+            case EnemyState.pretend:
                 Enemy_pretend();
                 break;
         }
@@ -74,16 +71,11 @@ public class Enemy : MonoBehaviour
         if (idleTime >= idleMaxTime)
         {
             idleTime = 0;
-            int i = Random.Range(0, 1);
-            switch (i)
-            {
-                case 0:
-                    enemyStateNow = enemyState.damage;
-                    break;
-                case 1:
-                    enemyStateNow = enemyState.cover;
-                    break;
-            }
+            int i = Random.Range(0, 99);
+            if(i <=80)
+                enemyStateNow = EnemyState.damage;
+            else if (i>80)
+                enemyStateNow = EnemyState.cover;
         }
     }
 
@@ -95,27 +87,22 @@ public class Enemy : MonoBehaviour
         switch (Mathf.Ceil(damageTime / 5))
         {
             case 2:
-                Notcie();
-                Debug.Log("隔壁出現提示");
+                if(Mathf.Abs(cam-number)  == 1)
+                    Notice();
                 break;
             case 3:
-                Notcie();
-                Debug.Log("全房出現提示");
+                Notice();
                 break;
         }
-        Debug.Log(damageTime);
         if (cam - number == 0)
         {
-            enemyStateNow = enemyState.pretend;
+            enemyStateNow = EnemyState.pretend;
         }
         if (damageTime >= damageCompleteTime)
         {
-            Debug.Log("全房出現提示");
-
-
             GameObject.Find("wall2").GetComponent<LongPressEffect>().level += 1;
             damageTime = 0;
-            enemyStateNow = enemyState.idle;
+            enemyStateNow = EnemyState.idle;
             leftNotice.enabled = false;
             rightNotice.enabled = false;
         }
@@ -128,7 +115,7 @@ public class Enemy : MonoBehaviour
         coverTime += Time.deltaTime;
         if (coverTime >= 30) {
             if (Mathf.Abs(cam - number) >= 1)
-                Debug.Log("全房出現提示");
+                Notice();
         }
 
     }
@@ -137,12 +124,12 @@ public class Enemy : MonoBehaviour
         Debug.Log(cam);
         if (Mathf.Abs( cam- number) >=1)
         {
-            enemyStateNow = enemyState.damage;
+            enemyStateNow = EnemyState.damage;
         }
         transform.position = originalEnemyPosition;
     }
 
-    void Notcie() {
+    void Notice() {
         int i = cam - number;
         if (i > 0)
         {
