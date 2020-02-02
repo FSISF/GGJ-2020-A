@@ -112,10 +112,14 @@ public class Enemy : MonoBehaviour
     {
         // 假裝挖吸引注意
         Debug.Log("假裝挖掘");
+
+        if (cam == number)
+            enemyStateNow = EnemyState.idle;
+        
         coverTime += Time.deltaTime;
         if (coverTime >= 30) {
             if (Mathf.Abs(cam - number) >= 1)
-                Notice();
+                Notice();            
         }
 
     }
