@@ -199,12 +199,12 @@ GameObject:
   - component: {fileID: 49969537}
   - component: {fileID: 49969536}
   m_Layer: 0
-  m_Name: hammer13
+  m_Name: hammer03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &49969535
 Transform:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49969534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.8, y: -1.5, z: -10}
+  m_LocalPosition: {x: 4.8, y: -1.5, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1704741186}
@@ -274,8 +274,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -300,12 +300,12 @@ GameObject:
   - component: {fileID: 55520401}
   - component: {fileID: 55520400}
   m_Layer: 0
-  m_Name: hammer22
+  m_Name: hammer02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &55520399
 Transform:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55520398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.86, y: 1.27, z: -10}
+  m_LocalPosition: {x: -2.86, y: 1.27, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 540341326}
@@ -375,8 +375,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -401,12 +401,12 @@ GameObject:
   - component: {fileID: 111972684}
   - component: {fileID: 111972683}
   m_Layer: 0
-  m_Name: hammer44
+  m_Name: hammer04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &111972682
 Transform:
   m_ObjectHideFlags: 0
@@ -415,7 +415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111972681}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -2.3, z: -10}
+  m_LocalPosition: {x: 2, y: -2.3, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 352649522}
@@ -476,8 +476,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -507,7 +507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &200201467
 Transform:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200201466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -2.3, z: -10}
+  m_LocalPosition: {x: 2, y: -2.3, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1277791743}
@@ -577,8 +577,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -755,6 +755,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  hammer: {fileID: 1449706597}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -897,6 +898,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  hammer: {fileID: 55520398}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -976,12 +978,12 @@ GameObject:
   - component: {fileID: 454007280}
   - component: {fileID: 454007279}
   m_Layer: 0
-  m_Name: hammer43
+  m_Name: hammer03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &454007278
 Transform:
   m_ObjectHideFlags: 0
@@ -990,7 +992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454007277}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.9, y: -1.5, z: -10}
+  m_LocalPosition: {x: 4.9, y: -1.5, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 352649522}
@@ -1051,8 +1053,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1140,6 +1142,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  hammer: {fileID: 454007277}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -1371,6 +1374,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  hammer: {fileID: 200201466}
   level: 0
   PressDownTimer: 0
   onLongClick:
@@ -1513,6 +1517,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  hammer: {fileID: 1134958057}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -1592,12 +1597,12 @@ GameObject:
   - component: {fileID: 695794920}
   - component: {fileID: 695794919}
   m_Layer: 0
-  m_Name: hammer33
+  m_Name: hammer03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &695794918
 Transform:
   m_ObjectHideFlags: 0
@@ -1606,7 +1611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695794917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6, y: -1.5, z: -10}
+  m_LocalPosition: {x: 4.6, y: -1.5, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1134766357}
@@ -1667,8 +1672,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1698,7 +1703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &713557941
 Transform:
   m_ObjectHideFlags: 0
@@ -1707,7 +1712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713557940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9000015, y: -1.5, z: -10}
+  m_LocalPosition: {x: 4.9000015, y: -1.5, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1277791743}
@@ -1768,8 +1773,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1857,6 +1862,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  hammer: {fileID: 1659990822}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -1936,12 +1942,12 @@ GameObject:
   - component: {fileID: 824801587}
   - component: {fileID: 824801586}
   m_Layer: 0
-  m_Name: hammer42
+  m_Name: hammer02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &824801585
 Transform:
   m_ObjectHideFlags: 0
@@ -1950,7 +1956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824801584}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2, y: 1.27, z: -10}
+  m_LocalPosition: {x: -3.2, y: 1.27, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 352649522}
@@ -2011,8 +2017,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2100,6 +2106,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  hammer: {fileID: 695794917}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -2184,7 +2191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &987547663
 Transform:
   m_ObjectHideFlags: 0
@@ -2193,7 +2200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987547662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.290001, y: -3.23, z: -10}
+  m_LocalPosition: {x: -4.290001, y: -3.23, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1277791743}
@@ -2254,8 +2261,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2343,6 +2350,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  hammer: {fileID: 1140756593}
   level: 0
   PressDownTimer: 0
   onLongClick:
@@ -2621,6 +2629,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  hammer: {fileID: 1896840709}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -2705,7 +2714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1041013333
 Transform:
   m_ObjectHideFlags: 0
@@ -2714,7 +2723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041013332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1599998, y: 1.27, z: -10}
+  m_LocalPosition: {x: -3.1599998, y: 1.27, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1277791743}
@@ -2775,8 +2784,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2864,6 +2873,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  hammer: {fileID: 713557940}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -3032,12 +3042,12 @@ GameObject:
   - component: {fileID: 1134958060}
   - component: {fileID: 1134958059}
   m_Layer: 0
-  m_Name: hammer11
+  m_Name: hammer01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1134958058
 Transform:
   m_ObjectHideFlags: 0
@@ -3046,7 +3056,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134958057}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.38, y: -3.23, z: -10}
+  m_LocalPosition: {x: -4.38, y: -3.23, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1704741186}
@@ -3107,8 +3117,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3133,12 +3143,12 @@ GameObject:
   - component: {fileID: 1140756596}
   - component: {fileID: 1140756595}
   m_Layer: 0
-  m_Name: hammer34
+  m_Name: hammer04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1140756594
 Transform:
   m_ObjectHideFlags: 0
@@ -3147,7 +3157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140756593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: -2.3, z: -10}
+  m_LocalPosition: {x: 1.9, y: -2.3, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1134766357}
@@ -3208,8 +3218,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3297,6 +3307,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  hammer: {fileID: 824801584}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -3528,6 +3539,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  hammer: {fileID: 1533129052}
   level: 0
   PressDownTimer: 0
   onLongClick:
@@ -3607,12 +3619,12 @@ GameObject:
   - component: {fileID: 1333689179}
   - component: {fileID: 1333689178}
   m_Layer: 0
-  m_Name: hammer14
+  m_Name: hammer04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1333689177
 Transform:
   m_ObjectHideFlags: 0
@@ -3621,7 +3633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333689176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -2.3, z: -10}
+  m_LocalPosition: {x: 2, y: -2.3, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1704741186}
@@ -3682,8 +3694,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3708,12 +3720,12 @@ GameObject:
   - component: {fileID: 1449706600}
   - component: {fileID: 1449706599}
   m_Layer: 0
-  m_Name: hammer21
+  m_Name: hammer01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1449706598
 Transform:
   m_ObjectHideFlags: 0
@@ -3722,7 +3734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449706597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.4, y: -3.23, z: -10}
+  m_LocalPosition: {x: -4.4, y: -3.23, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 540341326}
@@ -3783,8 +3795,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3809,12 +3821,12 @@ GameObject:
   - component: {fileID: 1459191380}
   - component: {fileID: 1459191379}
   m_Layer: 0
-  m_Name: hammer32
+  m_Name: hammer02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1459191378
 Transform:
   m_ObjectHideFlags: 0
@@ -3823,7 +3835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459191377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2, y: 1.27, z: -10}
+  m_LocalPosition: {x: -3.2, y: 1.27, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1134766357}
@@ -3884,8 +3896,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3973,6 +3985,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  hammer: {fileID: 1333689176}
   level: 0
   PressDownTimer: 0
   onLongClick:
@@ -4115,6 +4128,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  hammer: {fileID: 987547662}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -4194,12 +4208,12 @@ GameObject:
   - component: {fileID: 1533129055}
   - component: {fileID: 1533129054}
   m_Layer: 0
-  m_Name: hammer24
+  m_Name: hammer04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1533129053
 Transform:
   m_ObjectHideFlags: 0
@@ -4208,7 +4222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533129052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8, y: -2.3, z: -10}
+  m_LocalPosition: {x: 1.8, y: -2.3, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 540341326}
@@ -4269,8 +4283,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4358,6 +4372,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  hammer: {fileID: 2088894767}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -4535,6 +4550,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 69b7de6cc51e5495f91a8183c647e9b1, type: 3}
   lv2: {fileID: 21300000, guid: bf82e1b0808e04e22b2e45dd80b8a684, type: 3}
   lv3: {fileID: 21300000, guid: 2af9b081f7a434fb5a9a7776fe81eb85, type: 3}
+  hammer: {fileID: 49969534}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -4659,12 +4675,12 @@ GameObject:
   - component: {fileID: 1659990825}
   - component: {fileID: 1659990824}
   m_Layer: 0
-  m_Name: hammer12
+  m_Name: hammer02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1659990823
 Transform:
   m_ObjectHideFlags: 0
@@ -4673,7 +4689,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659990822}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.13, y: 1.27, z: -10}
+  m_LocalPosition: {x: -3.13, y: 1.27, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1704741186}
@@ -4734,8 +4750,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4823,6 +4839,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: 799be25a57cd4490cbd66e74d08881b9, type: 3}
   lv2: {fileID: 21300000, guid: 974437b9d3ecf4585976b5a27dbe50c5, type: 3}
   lv3: {fileID: 21300000, guid: 67ca6c58340b54973b42ebbbb4890e34, type: 3}
+  hammer: {fileID: 111972681}
   level: 0
   PressDownTimer: 0
   onLongClick:
@@ -5054,6 +5071,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  hammer: {fileID: 1041013332}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -5196,6 +5214,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: fad1cf386d110443bbcc95c97385ffc9, type: 3}
   lv2: {fileID: 21300000, guid: 10b92fe2b51f54c679ad96e0edc84801, type: 3}
   lv3: {fileID: 21300000, guid: a1b4cd2d491ee4cd997cbbe20bd89fd8, type: 3}
+  hammer: {fileID: 1459191377}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -5275,12 +5294,12 @@ GameObject:
   - component: {fileID: 1896840712}
   - component: {fileID: 1896840711}
   m_Layer: 0
-  m_Name: hammer31
+  m_Name: hammer01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1896840710
 Transform:
   m_ObjectHideFlags: 0
@@ -5289,7 +5308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896840709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.36, y: -3.23, z: -10}
+  m_LocalPosition: {x: -4.36, y: -3.23, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 1134766357}
@@ -5350,8 +5369,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5376,12 +5395,12 @@ GameObject:
   - component: {fileID: 1921499638}
   - component: {fileID: 1921499637}
   m_Layer: 0
-  m_Name: hammer41
+  m_Name: hammer01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1921499636
 Transform:
   m_ObjectHideFlags: 0
@@ -5390,7 +5409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921499635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.33, y: -3.23, z: -10}
+  m_LocalPosition: {x: -4.33, y: -3.23, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 352649522}
@@ -5451,8 +5470,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5540,6 +5559,7 @@ MonoBehaviour:
   lv1: {fileID: 21300000, guid: c7dbd7caf1fc942e796aa83dc29ed2c2, type: 3}
   lv2: {fileID: 21300000, guid: fc7914f6b4af74a088663cdbc928744f, type: 3}
   lv3: {fileID: 21300000, guid: 87882475c3d00499a9f405b43e48249a, type: 3}
+  hammer: {fileID: 1921499635}
   level: 3
   PressDownTimer: 0
   onLongClick:
@@ -5619,12 +5639,12 @@ GameObject:
   - component: {fileID: 2088894770}
   - component: {fileID: 2088894769}
   m_Layer: 0
-  m_Name: hammer23
+  m_Name: hammer03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2088894768
 Transform:
   m_ObjectHideFlags: 0
@@ -5633,7 +5653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088894767}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -1.5, z: -10}
+  m_LocalPosition: {x: 5, y: -1.5, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 540341326}
@@ -5694,8 +5714,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -815795087
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d16341ffd0ef241e5b311c253629cb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5784,6 +5804,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237519152909210333, guid: a5e83bf7b8637d649ab3fe6810bf00e6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77d05a264c7184dbab00d569ad859146,
+        type: 3}
+    - target: {fileID: 4237519152909210333, guid: a5e83bf7b8637d649ab3fe6810bf00e6,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5e83bf7b8637d649ab3fe6810bf00e6, type: 3}
@@ -5939,6 +5970,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: prisoner_4
       objectReference: {fileID: 0}
+    - target: {fileID: 8120197495270099783, guid: de64981d5af8a8a4faa822889756024d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77d05a264c7184dbab00d569ad859146,
+        type: 3}
+    - target: {fileID: 8120197495270099783, guid: de64981d5af8a8a4faa822889756024d,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8399365214891498894, guid: de64981d5af8a8a4faa822889756024d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6074,6 +6116,17 @@ PrefabInstance:
       propertyPath: longPressEffect_wall
       value: 
       objectReference: {fileID: 1018531974}
+    - target: {fileID: 6926527704719535674, guid: b5aff63692760e146ac5a33a5d885544,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77d05a264c7184dbab00d569ad859146,
+        type: 3}
+    - target: {fileID: 6926527704719535674, guid: b5aff63692760e146ac5a33a5d885544,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7055646716465945652, guid: b5aff63692760e146ac5a33a5d885544,
         type: 3}
       propertyPath: m_Name
@@ -6098,6 +6151,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: prisoner_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447624955769873268, guid: 655aff55609de6c498f8961dae3e606e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77d05a264c7184dbab00d569ad859146,
+        type: 3}
+    - target: {fileID: 5447624955769873268, guid: 655aff55609de6c498f8961dae3e606e,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8047115576821708568, guid: 655aff55609de6c498f8961dae3e606e,
         type: 3}
@@ -6183,6 +6247,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: prisoner_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481872595719328841, guid: 252ba68da8ac026479b9bfbfe40c470a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 77d05a264c7184dbab00d569ad859146,
+        type: 3}
+    - target: {fileID: 3481872595719328841, guid: 252ba68da8ac026479b9bfbfe40c470a,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3534197149307656248, guid: 252ba68da8ac026479b9bfbfe40c470a,
         type: 3}

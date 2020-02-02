@@ -10,6 +10,8 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
   public Sprite lv2;
   public Sprite lv3;
 
+  public GameObject hammer;
+
   public int level = 0; //item狀態
 
   void CheckLevel(){
@@ -35,6 +37,7 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
   //按下按鈕
   public void OnPointerDown(PointerEventData eventData){
     PressDown = true;
+    hammer.SetActive(true);
     //Debug.Log("PressDown");
   }
 
@@ -78,11 +81,13 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
   private void Reset(){
     PressDown = false;
     PressDownTimer = 0;
+    hammer.SetActive(false);
   }
   
   //觸發後執行的功能
   public void LongPressFuntion() { 
     Debug.Log("修復item");
+    hammer.SetActive(false);
 
     //切換不同的level圖
     if(level == 3){ //如果破壞程度為lv3

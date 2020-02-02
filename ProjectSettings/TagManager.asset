@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: hammer
+    uniqueID: 3479172209
+    locked: 0
   - name: UI
     uniqueID: 2604021255
     locked: 0
