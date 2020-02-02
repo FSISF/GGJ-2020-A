@@ -127,6 +127,10 @@ public class Enemy : MonoBehaviour
         Debug.Log("假裝挖掘");
         coverTime += Time.deltaTime;
         if (coverTime >= 30) {
+            if (cam - number == 0)
+            {
+                enemyStateNow = enemyState.idle;
+            }
             if (Mathf.Abs(cam - number) >= 1)
                 Debug.Log("全房出現提示");
         }
