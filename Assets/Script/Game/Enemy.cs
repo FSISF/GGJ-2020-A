@@ -18,14 +18,16 @@ public class Enemy : MonoBehaviour
     public float damageTime;            //累積正在破壞時間
     public float damageCompleteTime;    //破壞完成時間
     private float coverTime;            //累積正在掩護時間
-    private Vector2 originalEnemyPosition;  //開始遊戲時的位置
+    private Vector3 originalEnemyPosition;  //開始遊戲時的位置
     private float idleTime;             //閒置時間累計
     private int idleMaxTime;            //最大閒置時間
     private float lastTime = 0;
-    public int cam;
+    private int cam;
     private int derect = 1;
-    public Image rightNotice;
-    public Image leftNotice;
+    private Image rightNotice;
+    private Image leftNotice;
+    public GameObject wall;
+    private int wallLevel;
 
     void Start()
     {
@@ -33,12 +35,13 @@ public class Enemy : MonoBehaviour
         originalEnemyPosition = transform.position;
         rightNotice = GameObject.Find("right_notice").GetComponent<Image>();
         leftNotice = GameObject.Find("left_notice").GetComponent<Image>();
+        wallLevel = wall.GetComponent<LongPressEffect>().level;
     }
 
     // Update is called once per frame
     void Update()
     {
-        cam = GameObject.Find("Main Camera").GetComponent<DragMove>().NowIndex;
+        cam = DragMove.Instance.NowIndex;
         switch (enemyStateNow)
         {
             case EnemyState.idle:
@@ -81,9 +84,8 @@ public class Enemy : MonoBehaviour
 
     void Enemy_damage()
     {
-        transform.position = new Vector2(2.0f, -1.5f);
+        transform.position = new Vector3(wall.transform.position.x,transform.position.y,-2);
         damageTime += Time.deltaTime;
-        Debug.Log("挖掘動畫");
         switch (Mathf.Ceil(damageTime / 5))
         {
             case 2:
@@ -100,7 +102,7 @@ public class Enemy : MonoBehaviour
         }
         if (damageTime >= damageCompleteTime)
         {
-            GameObject.Find("wall2").GetComponent<LongPressEffect>().level += 1;
+            wallLevel += 1;
             damageTime = 0;
             enemyStateNow = EnemyState.idle;
             leftNotice.enabled = false;
@@ -123,6 +125,7 @@ public class Enemy : MonoBehaviour
         }
 
     }
+
     void Enemy_pretend()
     {
         Debug.Log(cam);

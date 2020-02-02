@@ -5,13 +5,12 @@ using UnityEngine.EventSystems;
 
 //修理item
 public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
-
   public Sprite lv0; //item未破壞
   public Sprite lv1;
   public Sprite lv2;
   public Sprite lv3;
 
-  public int level = 3; //item狀態
+  public int level = 0; //item狀態
 
   void CheckLevel(){
     if(level > 3){ //如果破壞程度大於3
