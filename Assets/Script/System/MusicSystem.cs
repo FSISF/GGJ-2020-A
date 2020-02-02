@@ -9,6 +9,9 @@ public enum BGMName
 
 public enum SoundName
 {
+    Fix,
+    Dig,
+    Whistle,
 }
 
 public class MusicSystem : SingletonMono<MusicSystem>
