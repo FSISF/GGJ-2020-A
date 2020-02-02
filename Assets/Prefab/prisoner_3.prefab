@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 864419889395490616}
   - component: {fileID: 6472652914503656848}
   m_Layer: 0
-  m_Name: prisoner_04
+  m_Name: prisoner_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   damageCompleteTime: 15
   wall: {fileID: 0}
   whist: {fileID: 8114503995977815632}
+  longPressEffect_wall: {fileID: 0}
 --- !u!1 &8114503995977815632
 GameObject:
   m_ObjectHideFlags: 0
