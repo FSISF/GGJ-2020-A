@@ -38,6 +38,7 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
   public void OnPointerDown(PointerEventData eventData){
     PressDown = true;
     hammer.SetActive(true);
+    MusicSystem.Instance.PlaySound(SoundName.Fix);
     //Debug.Log("PressDown");
   }
 
