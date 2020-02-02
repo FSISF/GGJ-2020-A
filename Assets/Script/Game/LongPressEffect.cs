@@ -37,8 +37,11 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
   //按下按鈕
   public void OnPointerDown(PointerEventData eventData){
     PressDown = true;
-    hammer.SetActive(true);
-    MusicSystem.Instance.PlaySound(SoundName.Fix);
+
+    if(level > 0){ //有損壞才出現鐵鎚
+      hammer.SetActive(true);
+      MusicSystem.Instance.PlaySound(SoundName.Fix);
+    }
     //Debug.Log("PressDown");
   }
 
