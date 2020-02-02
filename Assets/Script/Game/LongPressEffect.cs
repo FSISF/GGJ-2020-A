@@ -19,7 +19,7 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
   }
 
   void Start(){
-    GetComponent<SpriteRenderer>().sprite = lv3;
+    GetComponent<SpriteRenderer>().sprite = lv0;
 
     GameEvent.CheckObjectLevel += CheckLevel;
 
@@ -46,6 +46,23 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
   //當按下按鈕 PressDown = true 時計時
   void Update(){
+    if (level == 3)
+    { //如果破壞程度為lv3
+        GetComponent<SpriteRenderer>().sprite = lv3;
+    }
+    else if (level == 2)
+    { //如果破壞程度為lv2
+        GetComponent<SpriteRenderer>().sprite = lv2;
+    }
+    else if (level == 1)
+    { //如果破壞程度為lv1
+        GetComponent<SpriteRenderer>().sprite = lv1;
+    }
+    else if (level == 0)
+    { //如果破壞程度為lv1
+        GetComponent<SpriteRenderer>().sprite = lv0;
+    }
+
     if (PressDown == true){
       PressDownTimer += Time.deltaTime;
       if (PressDownTimer >= HoldTime){
@@ -54,7 +71,7 @@ public class LongPressEffect : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         }
         Reset();
       }
-    }
+    } 
   }
 
   //當PressUp的時候重置計算時間
