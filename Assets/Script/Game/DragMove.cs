@@ -87,6 +87,11 @@ public class DragStateIdle : IDragState
 
     public override void StateUpdate()
     {
+        if (GameStateManager.Instance.GameStateNow != eGameState.Idle)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             DragMove.Instance.MouseDownPosX = Input.mousePosition.x;
@@ -108,6 +113,12 @@ public class DragStateOnDrag : IDragState
 
     public override void StateUpdate()
     {
+        if (GameStateManager.Instance.GameStateNow != eGameState.Idle)
+        {
+            DragMove.Instance.SetState(eDragState.Idle);
+            return;
+        }
+
         if (Input.GetMouseButtonUp(0))
         {
             DragMove.Instance.MouseUpPosX = Input.mousePosition.x;
