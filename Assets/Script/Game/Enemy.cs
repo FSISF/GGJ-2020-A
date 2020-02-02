@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     public GameObject whist;
 
     public LongPressEffect longPressEffect_wall = null;
+    private Notice notice;
 
     void Start()
     {
@@ -92,7 +93,7 @@ public class Enemy : MonoBehaviour
         switch (Mathf.Ceil(damageTime / 5))
         {
             case 2:
-                if(Mathf.Abs(cam-number)  == 1)
+                if (Mathf.Abs(cam - number) == 1)
                     Notice();
                 break;
             case 3:
@@ -133,10 +134,27 @@ public class Enemy : MonoBehaviour
         {
             enemyStateNow = EnemyState.damage;
         }
+        Notice();
         whist.SetActive(true);
         transform.position = originalEnemyPosition;
     }
-
+    void Notice()
+    {
+        if (number == cam)
+        {
+            leftNotice.enabled = false;
+            rightNotice.enabled = false;
+        }
+        else if (number < cam)
+        {
+            leftNotice.enabled = true;
+        }
+        else if(number > cam)
+        {
+            rightNotice.enabled = true;
+        }
+    }
+    /*
     void Notice() {
         int i = cam - number;
         if (i > 0)
@@ -153,4 +171,6 @@ public class Enemy : MonoBehaviour
             rightNotice.enabled = false;
         }
     }
+    */
+
 }
