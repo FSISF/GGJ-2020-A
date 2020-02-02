@@ -129,6 +129,7 @@ public class Enemy : MonoBehaviour
 
     void Enemy_pretend()
     {
+        MusicSystem.Instance.PlaySound(SoundName.Whistle);
         if (Mathf.Abs( cam- number) >=1)
         {
             enemyStateNow = EnemyState.damage;
