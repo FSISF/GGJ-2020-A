@@ -5,7 +5,6 @@ using UnityEngine;
 public enum eGameState
 {
     Idle,
-    Punish,
     GameWin,
     GameOver,
 }
@@ -43,9 +42,6 @@ public class GameStateManager : SingletonMono<GameStateManager>
         {
             case eGameState.Idle:
                 GameStateContext.SetState(new GameStateIdle());
-                break;
-            case eGameState.Punish:
-                GameStateContext.SetState(new GameStatePunish());
                 break;
             case eGameState.GameWin:
                 GameStateContext.SetState(new GameStateGameWin());
@@ -115,32 +111,6 @@ public class GameStateIdle : IGameState
 
     public override void StateEnd()
     {
-    }
-}
-
-public class GameStatePunish : IGameState
-{
-    private System.IDisposable PunishTimer = null;
-    public override void StateStart()
-    {
-        GameStateManager.Instance.GameStateNow = eGameState.Punish;
-
-        PunishTimer = Usefull.Timer(10, () =>
-        {
-            GameStateManager.Instance.SetGameState(eGameState.Idle);
-        });
-    }
-
-    public override void StateUpdate()
-    {
-    }
-
-    public override void StateEnd()
-    {
-        if (PunishTimer != null)
-        {
-            PunishTimer.Dispose();
-        }
     }
 }
 
